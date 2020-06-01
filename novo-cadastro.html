@@ -13,49 +13,84 @@
 <body>
     <div class="bloco">
         <img src="./img/helpper-logo.png" id="logo" alt="logo-helpper">
+        
+        <a href="index.html" id="voltar">
+            <img src="./img/voltar.png" id="voltar" alt="icone-voltar">
+        </a>
 
         <div class="bloco-central">
-            <form action="clientes-cadastrados.html" method="get" >
+            <form action="clientes-cadastrados.html" method="POST" >
                 <div class="form-field">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input class="text-field" type="text" autocomplete="off" autofocus id="nome" style="border: none">
+                    <label for="nome" class="form-label" >Nome</label>
+                    <input class="text-field" type="text" autocomplete="off" autofocus id="nomeid" style="border: none">
                 </div>
                 <div class="form-field">
                     <label for="email" class="form-label" >Email</label>
-                    <input class="text-field" type="email" autocomplete="on" id="email" style="border: none">
+                    <input class="text-field" type="email" autocomplete="on" id="emailid" style="border: none">
                 </div>
                 <div class="form-field">
                     <label for="Telefone" class="form-label" >Telefone</label>
-                    <input class="text-field" type="text" autocomplete="off" id="Telefone" style="border: none">
+                    <input class="text-field" type="text" autocomplete="off" id="telefoneid" style="border: none">
                 </div>
                 <div class="form-field">
                     <label for="CEP" class="form-label" >Cep</label>
-                    <input class="text-field" type="text" autocomplete="off" id="CEP" style="border: none">
+                    <input class="text-field" type="text" autocomplete="off" id="cepid" style="border: none">
                 </div>
                 <div class="form-field">
                     <label for="Logradouro" class="form-label" >Logradouro</label>
-                    <input class="text-field" type="text" autocomplete="off" id="Logradouro" style="border: none">
+                    <input class="text-field" type="text" autocomplete="off" id="logradouroid" style="border: none">
                 </div>
                 <div class="form-field">
                     <label for="Número" class="form-label" >Número</label>
-                    <input class="text-field" type="text" autocomplete="off" id="Número" style="border: none">
+                    <input class="text-field" type="text" autocomplete="off" id="numeroid" style="border: none">
                 </div>
                 <div class="form-field">
                     <label for="Bairro" class="form-label" >Bairro</label>
-                    <input class="text-field" type="text" autocomplete="off" id="Bairro" style="border: none">
+                    <input class="text-field" type="text" autocomplete="off" id="bairroid" style="border: none">
                 </div>
                 <div class="form-field">
                     <label for="Cidade"class="form-label" >Cidade</label>
-                    <input class="text-field" type="text" autocomplete="off" id="Cidade" style="border: none">
+                    <input class="text-field" type="text" autocomplete="off" id="cidadeid" style="border: none">
                 </div>
                 <div class="form-field">
                     <label for="Estado"class="form-label" >Estado</label>
-                    <input class="text-field" type="text" autocomplete="off" id="Estado" style="border: none">
+                    <input class="text-field" type="text" autocomplete="off" id="estadoid" style="border: none">
                 </div>
-                <button class="botao" type="submit">Cadastrar</button>
+                <button class="botao" id="btnSalvar" onclick="enviarCadastro()" type="submit">Cadastrar</button>
             </form>
         </div>
     </div>
+
+    <script>
+        function enviarCadastro(){
+            var nome = document.getElementById("nomeid").value;
+            var email = document.getElementById("emailid").value;
+            var telefone = document.getElementById("telefoneid").value;
+            var cep = document.getElementById("cepid").value;
+            var logradouro = document.getElementById("logradouroid").value;
+            var numero = document.getElementById("numeroid").value;
+            var bairro = document.getElementById("bairroid").value;
+            var cidade = document.getElementById("cidadeid").value;
+            var estado = document.getElementById("estadoid").value;
+
+            var cliente = { nomeid:nome, emailid:email, telefoneid:telefone, cepid:cep, logradouroid:logradouro, numeroid:numero, bairroid:bairro, cidadeid:cidade, estadoid:estado };
+
+            cliente_json = JSON.stringify(cliente);
+
+            localStorage.setItem("clienteid", cliente_json);
+            
+
+        function adicionar()
+        {
+            localStorage.setItem(txtChave.value, txtValor.value);
+            alert("Item adicionado.");
+            txtChave.value = txtValor.value = "";
+        }
+
+
+
+        }
+    </script>
 </body>
 
 </html>

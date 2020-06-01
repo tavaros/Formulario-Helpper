@@ -33,7 +33,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
     flex-direction: column;
     padding-bottom: 20px;
 }
@@ -81,4 +81,33 @@ h2{
     color: #263238;
     font-size: 18px;
 
+}
+
+#voltar{
+    position: relative;
+    right: 80px;
+    top: 16px;
+    max-width: 32px;
+    max-height: 32px;
+    
+}
+
+.excluir {
+    position: relative;
+    left: 120px;
+    color: #263238;
+    background: #aeea00;
+    border-radius: 10px 10px 10px 10px;
+    border-style: none;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.excluir:hover {
+    background-color: red;
+    border-radius: 10px 10px 10px 10px;
 }

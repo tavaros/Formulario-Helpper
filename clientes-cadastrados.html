@@ -14,15 +14,28 @@
     <div class="bloco">
 
         <img src="./img/helpper-logo.png" id="logo" alt="logo-helpper">
+        <a href="index.html" id="voltar">
+            <img src="./img/voltar.png" id="voltar" alt="icone-voltar">
+        </a>
 
         <div class="bloco-central">  
             <h2>Clientes Cadastrados</h2>
+
+            <table id="tblListar" onload="ler()"></table>
+            <button class="excluir" id="btnRemover" onclick="remover()" >Remover</button>
 
             <a href="novo-cadastro.html">
                 <button class="botao" type="button">Novo cadastro</button>
             </a>
         </div>
     </div>
+    <script>
+        function ler(){
+            var obj = localStorage.getItem(cliente.value);
+        }
+        remover(){
+        }    
+    </script>
 </body>
 
 </html>
