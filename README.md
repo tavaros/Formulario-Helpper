@@ -4,6 +4,9 @@
 
 Teste pratico com a construção de um site contendo um formulário de cadastro de clientes.
 
+![tela-cadastro](https://user-images.githubusercontent.com/49734737/83370340-84b30200-a395-11ea-9193-ce7c5e5e8b54.jpg)
+
+
 ### Funções do teste
 Cadastro de dados nos campos:
 * Nome
@@ -43,4 +46,3 @@ O formulário e seus dados utilizaram as seguintes linguagens e ferramentas:
 * [JavaScript](https://www.javascript.com/)
 * [CSS](https://www.w3schools.com/css/)
 * [VS Code](https://code.visualstudio.com/)
-* [jQuery](https://jquery.com/)
