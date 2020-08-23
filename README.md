@@ -2,7 +2,7 @@
 ![logo](https://user-images.githubusercontent.com/49734737/83259169-ef91ec80-a18d-11ea-8fb5-2b9dd942a319.png)
 # Formulario-Helpper
 
-Teste pratico com a construção de um site contendo um formulário de cadastro de clientes.
+Praticando a onstrução de um site contendo um formulário de cadastro de clientes.
 
 ![tela-cadastro](https://user-images.githubusercontent.com/49734737/83370340-84b30200-a395-11ea-9193-ce7c5e5e8b54.jpg)
 
